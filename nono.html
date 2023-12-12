@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>nono's html</title>
+</head>
+  <link rel="stylesheet" href="styles.css">
+<body >
+  
+
+
+<div id="tool-bar">
+  <button id="logo" onclick="changeContent('home')">Nono's web</button>
+  <div id="fill"></div>
+  <button class="navs" onclick="changeContent('about')">About</button>
+  <button class="navs" onclick="changeContent('personal')">Personal</button>
+</div>
+
+<div id="main-page" >
+  <div id="content">
+    <div id="home">
+      <h1>This is homepage! Wander around!</h1>
+    </div>
+
+    <div id="personal">
+      <h1>This is your personal information:</h1>
+      <div> 
+        <span class="tag">Name: </span> 
+        <span>ZhanYouqiu</span>
+      </div>
+      <div> 
+        <span class="tag">Hobbies: </span> 
+        <span id="hobby">Physics</span>
+        <button onclick="changeFirstHobby()">change hobby</button>
+        <span>Make fun of inexperienced software developers</span>
+        <button onclick="changeSecondHobby()">change hobby</button>
+      </div>
+      <div> 
+        <span class="tag" >School: </span> 
+        <span>UCSB</span>
+      </div>
+    </div>
+
+    <div id="about">
+      <h1>
+        This is my About page
+      </h1>
+      <span>
+        I build this website in order to...
+      </span>
+    </div>
+
+    <div id="hvt">
+      <h1>Computer Scientist Zhan Neumann said TreeMap is faster than HashMap, let's try!</h1>
+      <h3>This webpage can receive your input and calculate speeds through back-end java program, type your contents!</h3>
+      <div id="hvt-grid">
+        <Form onsubmit="handleSubmission()">
+          <h3>HashMap</h3>
+          <label>Type your data quantity</label>
+          <input type = "number" min="0" max="10000"></input>
+          <label>Type your string length</label>
+          <input type = "number" min="0" max="10000"></input>
+
+          <h3>TreeMap</h3>
+          <label>Type your data quantity</label>
+          <input type = "number" min="0" max="10000"></input>
+          <label>Type your string length</label>
+          <input type = "number" min="0" max="10000"></input>
+
+          <button onclick type="submit">Submit!</button>
+        </Form>
+        <div id="test-result1">
+          <h2>Here is your output!</h2>
+          <h2><------Plase enter your numbers here!</h2>
+        </div>
+
+        <div id="test-result2">
+          <h1>
+            You can access the solution only in VIP account! Please log in and buy VIP!
+          </h1>
+          <h1>
+            Or you can pay me to buy the result! A VIP costs $200 a day, but it is only $50 to buy only this result!
+          </h1>
+          <div id="loading">
+            <img src="https://first-project-nono.s3.us-east-2.amazonaws.com/Snipaste_2023-12-12_06-17-49.png" alt="Loading Icon">
+          </div>
+          <h1>
+            ScanIt!!!!!!!!!! 
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color:bisque
+}
+
+h2 {
+  color:bisque
+}
+
+h3 {
+  color:bisque
+}
+
+span {
+  color:bisque;
+  line-height: 180%;
+}
+
+button {
+  color:bisque;
+  background-color:purple;
+  border-radius: 20%;
+  cursor:pointer
+}
+
+input {
+  background-color:rgb(147, 147, 215);
+  height: 40x;
+  font-size: 20px;
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+}
+
+form >button {
+  height: 50px;
+}
+
+label {
+  color:bisque;
+  line-height: 180%;
+}
+
+
+#tool-bar {
+  background-color:darkslategrey;
+  height:60px;
+  width:100%;
+  top:0px;
+  left:0px;
+  position:fixed;
+  display:flex;
+  box-shadow: 0 4px 8px 0 ;
+}
+
+#logo {
+  margin-left:20px;
+  text-decoration: none;
+  color:black;
+  font-size:40px;
+  font-weight:bold;
+  font-style:italic;
+  color:bisque;
+}
+
+#fill {
+  flex-grow: 1;
+}
+
+.navs {
+  background-color: darkslategrey;
+  border:none;
+  font-size: 30px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-right: 40px;
+}
+
+.tag {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.project-button {
+
+}
+
+#main-page {
+  position:static;
+  background-color: gray;
+  min-height: calc(100vh - 60px);
+  left:0%;
+  width:100%;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  
+}
+
+#content {
+  width: 1000px;
+  padding-top: 20px;
+  padding-bottom: 50px
+}
+
+#home {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: auto, auto, auto;
+  gap:50px
+}
+
+#home > h1{
+  grid-column: 1/ span 3;
+}
+
+.project-button {
+  height: 280px;
+  width: 280px;
+  background-color:indigo;
+}
+
+
+#about {
+  flex-direction: column;
+  display: none;
+}
+
+#personal {
+  display: none;
+}
+
+#hvt {
+  display:none;
+}
+
+#hvt-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 50px
+}
+
+#hvt-grid > form {
+  width: 100%;
+}
+
+#hvt-grid > #test-result1 {
+  width: 100%
+}
+
+#hvt-grid > #test-result2{
+  display: none;
+  width: 100%
+}
